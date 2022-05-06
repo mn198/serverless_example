@@ -1,7 +1,7 @@
 {
   "name": "serverless-plugin-typescript-example",
   "scripts": {
-    "start": "serverless deploy"
+    "start": "sls offline start"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.62",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "mongoose": "^6.3.2",
-    "querystring": "^0.2.1",
+    "query-string": "^7.1.1",
     "serverless-offline": "^6.9.0"
   }
 }

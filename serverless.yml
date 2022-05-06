@@ -17,14 +17,38 @@ functions:
     events:
       - http:
           method: post
-          path: post
+          path: posts
           cors: true
     handler: src/index.createPost
 
-  hello:
+  getPost:
     events:
       - http:
           method: get
-          path: hello
+          path: posts/{id}
           cors: true
-    handler: src/index.hello
+    handler: src/index.getPost
+
+  getAllPost:
+    events:
+      - http:
+          method: get
+          path: posts
+          cors: true
+    handler: src/index.getAllPost
+
+  updatePost:
+    events:
+      - http:
+          method: put
+          path: posts/{id}
+          cors: true
+    handler: src/index.updatePost
+
+  deletePost:
+    events:
+      - http:
+          method: delete
+          path: posts/{id}
+          cors: true
+    handler: src/index.deletePost
