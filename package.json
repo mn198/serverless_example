@@ -1,0 +1,17 @@
+{
+  "name": "serverless-plugin-typescript-example",
+  "scripts": {
+    "start": "serverless deploy"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.62",
+    "serverless": "^2.2.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "mongoose": "^6.3.2",
+    "querystring": "^0.2.1",
+    "serverless-offline": "^6.9.0"
+  }
+}
